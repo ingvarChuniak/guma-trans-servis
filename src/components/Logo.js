@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../logo.png';
 
 const StyledLink = styled(Link)`
+  outline: none;
   text-decoration: none;
   display: flex;
 `;

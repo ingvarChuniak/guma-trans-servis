@@ -44,6 +44,7 @@ const StyledLi = styled.li`
 
 const StyledLink = styled(Link)`
   text-decoration: none;
+  outline: none;
   color: #3c1874;
   transition: 0.3s all;
   &:hover {
@@ -82,7 +83,7 @@ export default function NavBar() {
         </StyledLi>
         <StyledLi>
           <StyledLink to="/reviews" onClick={closeMenu}>
-            ВІДГУКИ
+            ЗНАЙТИ НАС
           </StyledLink>
         </StyledLi>
         <StyledLi>
