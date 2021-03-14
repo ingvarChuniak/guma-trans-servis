@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/guma-trans-servis/static/css/main.7176885d.chunk.css",
-    "main.js": "/guma-trans-servis/static/js/main.0f7061fb.chunk.js",
-    "main.js.map": "/guma-trans-servis/static/js/main.0f7061fb.chunk.js.map",
+    "main.js": "/guma-trans-servis/static/js/main.8b16aa5d.chunk.js",
+    "main.js.map": "/guma-trans-servis/static/js/main.8b16aa5d.chunk.js.map",
     "runtime-main.js": "/guma-trans-servis/static/js/runtime-main.f516cf85.js",
     "runtime-main.js.map": "/guma-trans-servis/static/js/runtime-main.f516cf85.js.map",
     "static/js/2.52d085d6.chunk.js": "/guma-trans-servis/static/js/2.52d085d6.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.f516cf85.js",
     "static/js/2.52d085d6.chunk.js",
     "static/css/main.7176885d.chunk.css",
-    "static/js/main.0f7061fb.chunk.js"
+    "static/js/main.8b16aa5d.chunk.js"
   ]
 }
