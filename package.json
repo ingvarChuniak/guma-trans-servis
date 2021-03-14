@@ -1,6 +1,6 @@
 {
   "name": "guma-trans-servis-app",
-  "homepage": "http://ingvarChuniak.github.io/guma-trans-servis",
+  "homepage": "https://ingvarChuniak.github.io/guma-trans-servis/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^12.6.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-icons": "^4.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "styled-components": "^5.2.1",
@@ -20,6 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "prettier": {

@@ -1,20 +1,13 @@
 import { useState } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { FiMenu, FiX } from 'react-icons/fi';
+import Logo from '../components/Logo.js';
+import Menu from '../components/MenuIcon.js';
 
-//NavLogo
-const Logo = styled(Link)`
-  text-decoration: none;
-  color: white;
-`;
-
-//NavBar
 const StyledNav = styled.nav`
   height: 80px;
   width: auto;
-  background: blue;
-  color: white;
+  background: #f3f3f3;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,7 +18,6 @@ const StyledNav = styled.nav`
   }
 `;
 
-//NavLinks
 const StyleedUl = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, auto);
@@ -38,38 +30,28 @@ const StyleedUl = styled.ul`
     text-align: center;
     width: 100%;
     top: 80px;
-    left: -100%;
+    background: #f3f3f3;
     transition: 0.5s all;
-    ${(props) =>
-      props.isOpened
-        ? css`
-            background: blue;
-            left: 0;
-          `
-        : ''}
-  }
+    left: ${(props) => (props.isOpened ? '0' : '-100%')};
+  } ;
 `;
 
-//NavItem
 const StyledLi = styled.li`
   @media only screen and (max-width: 500px) {
     padding: 10px 0;
   }
 `;
 
-//NavLink
 const StyledLink = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: #3c1874;
   transition: 0.3s all;
   &:hover {
     color: red;
   }
 `;
-
-const Icon = styled.div`
+const MenuWrapper = styled.div`
   display: none;
-  font-size: 2rem;
   cursor: pointer;
   @media only screen and (max-width: 500px) {
     display: flex;
@@ -83,8 +65,10 @@ export default function NavBar() {
 
   return (
     <StyledNav>
-      <Logo to="/">Logo</Logo>
-      <Icon onClick={handleClick}> {isOpened ? <FiX /> : <FiMenu />} </Icon>
+      <Logo />
+      <MenuWrapper>
+        <Menu eventHandler={handleClick} />
+      </MenuWrapper>
       <StyleedUl isOpened={isOpened}>
         <StyledLi>
           <StyledLink to="/" onClick={closeMenu}>
